@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Dalenta POS</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="food_title">Food Title</string>
+    <string name="btn_add_name">Add Product</string>
+    <string name="half_size_name">Half</string>
+    <string name="size_name">Whole</string>
+    <string name="gst">GST</string>
+    <string name="serviceTax">Service Charge</string>
+    <string name="notes_hint">Enter additional notes</string>
+    <string name="title_select_payment_method">Choose a payment method below</string>
+    <string name="attention_round_off">Number has been rounded off</string>
+    <string name="payment_method_1">Cash</string>
+    <string name="payment_method_2">Bank Transfer</string>
+    <string name="payment_method_3">Debit / Credit Card</string>
+    <string name="payment_method_4">QRIS E-Wallet</string>
+    <string name="send_receipt_confirmation">How would you like to receiver your receipt?</string>
+    <string name="send_by_email">Send by email</string>
+    <string name="send_by_whatsApp">Send by WhatsApp</string>
+    <string name="title_menu_checkout">Check-out</string>
+</resources>

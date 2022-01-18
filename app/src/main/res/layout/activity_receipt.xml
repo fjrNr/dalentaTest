@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ItemListActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="80dp"
+        >
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Rp. 0"
+            android:textColor="@android:color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/statusCharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:text="Out of ...."
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:text="@string/send_receipt_confirmation"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+            <EditText
+                android:background="@drawable/rounded_border"
+                android:backgroundTint="#51AAAAAA"
+                android:hint="Email"
+                android:id="@+id/edit_txt_email"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textStyle="bold"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_send_by_email"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:text="@string/send_by_email"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_baseline_email_24"
+                app:iconGravity="textStart"
+                style="@style/Widget.MaterialComponents.Button"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+            <EditText
+                android:background="@drawable/rounded_border"
+                android:backgroundTint="#51AAAAAA"
+                android:hint="Whatsapp Number"
+                android:id="@+id/edit_txt_phone"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_width="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textStyle="bold"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_send_by_whatsApp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:text="@string/send_by_whatsApp"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_whatsapp"
+                app:iconGravity="textStart"
+                style="@style/Widget.MaterialComponents.Button"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
